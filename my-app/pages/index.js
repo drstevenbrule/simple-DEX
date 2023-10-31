@@ -177,9 +177,9 @@ export default function Home() {
 		const provider = await web3ModalRef.current.connect();
 		const web3Provider = new providers.Web3Provider(provider);
 		const { chainId } = await web3Provider.getNetwork();
-		if (chainId !== 5) {
-			window.alert("Change the network to Goerli");
-			throw new Error("Change network to Goerli");
+		if (chainId !== 42069) {
+			window.alert("Change the network to InkOP");
+			throw new Error("Change network to InkOP");
 		}
 
 		if (needSigner) {
@@ -192,7 +192,7 @@ export default function Home() {
 	useEffect(() => {
 		if (!walletConnected) {
 			web3ModalRef.current = new Web3Modal({
-				network: "goerli",
+				network: "inkop",
 				providerOptions: {},
 				disableInjectedProvider: false,
 			});
@@ -220,10 +220,10 @@ export default function Home() {
 					<div className={styles.description}>
 						You have:
 						<br />
-						{utils.formatEther(cdBalance)} Crypto Dev Tokens
+						{utils.formatEther(cdBalance)} Stinky Inkies
 						<br />
 						{utils.formatEther(ethBalance)} Ethereum<br />
-						{utils.formatEther(lpBalance)} Crypto Dev LP Tokens
+						{utils.formatEther(lpBalance)} Stinky Inky LP Tokens
 					</div>
 					<div>
 						{utils.parseEther(reservedCD.toString()).eq(zero) ? (
@@ -236,7 +236,7 @@ export default function Home() {
 								/>
 								<input
 									type="number"
-									placeholder="Amount of CryptoDev tokens"
+									placeholder="Amount of Stinky Inkies"
 									onChange={(e) =>
 										setAddCDTokens(
 											BigNumber.from(utils.parseEther(e.target.value || "0"))
@@ -265,8 +265,8 @@ export default function Home() {
 									className={styles.input}
 								/>
 								<div className={styles.inputDiv}>
-									{`You will need ${utils.formatEther(addCDTokens)} Crypto Dev
-                  Tokens`}
+									{`You will need ${utils.formatEther(addCDTokens)} Stinky Inkies
+                  `}
 								</div>
 								<button className={styles.button1} onClick={_addLiquidity}>
 									Add
@@ -318,14 +318,14 @@ export default function Home() {
 						}}
 					>
 						<option value="eth">Ethereum</option>
-						<option value="cryptoDevToken">Crypto Dev Token</option>
+						<option value="cryptoDevToken">Stinky Inkies</option>
 					</select>
 					<br />
 					<div className={styles.inputDiv}>
 						{ethSelected
 							? `You will get ${utils.formatEther(
 								tokenToBeReceivedAfterSwap
-							)} Crypto Dev Tokens`
+							)} Stinky Inkies`
 							: `You will get ${utils.formatEther(
 								tokenToBeReceivedAfterSwap
 							)} Eth`}
@@ -342,15 +342,15 @@ export default function Home() {
 	return (
 		<div>
 			<Head>
-				<title>DEX Crypto Devs</title>
-				<meta name="description" content="DEX Crypto Devs" />
+				<title>blINK Dex</title>
+				<meta name="description" content="blINK Dex" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className={styles.main}>
 				<div>
-					<h1 className={styles.title}>Welcome to Crypto Devs Exchange!</h1>
+					<h1 className={styles.title}>Welcome to blINK Dex!</h1>
 					<div className={styles.description}>
-						Exchange Ethereum &#60;&#62; Crypto Dev Tokens
+						Exchange Ethereum &#60;&#62; Stinky Inkies
 					</div>
 					<div>
 						<button
@@ -378,7 +378,7 @@ export default function Home() {
 			</div>
 
 			<footer className={styles.footer}>
-				Made with &#10084; by Crypto Devs
+				Since '182
 			</footer>
 		</div>
 	);
