@@ -426,13 +426,13 @@ export const TOKEN_CONTRACT_ABI = [
       "type": "receive"
     }
   ];
-export const TOKEN_CONTRACT_ADDRESS = "0xA9fC651Bf50663DEd03A581D1A5B8aE1f4686aD1";
+export const TOKEN_CONTRACT_ADDRESS = "0xbac63e07DDA58998f041bc18d65279EF70eE1b0a";
 export const EXCHANGE_CONTRACT_ABI = [
     {
       "inputs": [
         {
           "internalType": "address",
-          "name": "_CryptoDevtoken",
+          "name": "_StinkyInkytoken",
           "type": "address"
         }
       ],
@@ -577,7 +577,7 @@ export const EXCHANGE_CONTRACT_ABI = [
     },
     {
       "inputs": [],
-      "name": "cryptoDevTokenAddress",
+      "name": "stinkyInkiesAddress",
       "outputs": [
         {
           "internalType": "address",
@@ -601,7 +601,7 @@ export const EXCHANGE_CONTRACT_ABI = [
           "type": "uint256"
         }
       ],
-      "name": "cryptoDevTokenToEth",
+      "name": "stinkyInkyTokenToEth",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -651,7 +651,7 @@ export const EXCHANGE_CONTRACT_ABI = [
           "type": "uint256"
         }
       ],
-      "name": "ethToCryptoDevToken",
+      "name": "ethToStinkyInkyToken",
       "outputs": [],
       "stateMutability": "payable",
       "type": "function"
@@ -839,4 +839,4 @@ export const EXCHANGE_CONTRACT_ABI = [
       "type": "function"
     }
   ];
-export const EXCHANGE_CONTRACT_ADDRESS = "0x7360cDf8030EB0C2c216F903ae7b8440bF4991F4";
+export const EXCHANGE_CONTRACT_ADDRESS = "0x1a49CaC69740F27041cBd736A88d8fF059b3fa07";
