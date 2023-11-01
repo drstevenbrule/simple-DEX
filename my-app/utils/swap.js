@@ -53,7 +53,7 @@ export const swapTokens = async (
 	);
 	let tx;
 	if(ethSelected) {
-		tx = await exchangeContract.ethToCryptoDevToken(
+		tx = await exchangeContract.ethToStinkyInkyToken(
 			tokenToBeReceivedAfterSwap, 
 			{
 				value: swapAmountWei,
@@ -65,7 +65,7 @@ export const swapTokens = async (
 			swapAmountWei.toString()
 		);
 		await tx.wait();
-		tx = await exchangeContract.cryptoDevTokenToEth(
+		tx = await exchangeContract.stinkyInkyTokenToEth(
 			swapAmountWei,
 			tokenToBeReceivedAfterSwap
 		);
