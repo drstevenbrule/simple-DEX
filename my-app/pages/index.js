@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { useEffect, useRef, useState } from "react";
-import YouTube from "react-youtube"; 
+import Iframe from 'react-iframe'
 import Web3Modal from "web3modal";
 import styles from "../styles/Home.module.css";
 import { BigNumber, providers, utils } from "ethers";
@@ -376,6 +376,13 @@ import { swapTokens, getAmountOfTokensReceivedFromSwap } from "../utils/swap";
 
 			<footer className={styles.footer}>
 				Since '182
+					<Iframe url="https://www.sdrive.app/embed/1ptBQD"
+        width="640px"
+        height="320px"
+        id=""
+        className=""
+        display="block"
+        position="relative"/>
 			</footer>
 		</div>
 	);
