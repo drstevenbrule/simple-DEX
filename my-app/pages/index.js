@@ -375,17 +375,18 @@ export default function Home() {
 					{renderButton()}
 				</div>
 				<div>
-					<ReactHowler
-          src={["sound.mp3"]}
-          playing={true}
-        />
+					
 
 				</div>
 			</div>
 
 			<footer className={styles.footer}>
 				Since '182
-
+				<ReactHowler
+          src={["sound.mp3"]}
+          playing={true}
+	  preload={true}  
+        />
 			</footer>
 		</div>
 	);
