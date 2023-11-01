@@ -374,7 +374,7 @@ export default function Home() {
 					{renderButton()}
 				</div>
 				<div>
-				<iframe width="500" height="300" src='https://www.youtube.com/embed/oZwzttexaUM?si=_FoKfs0Ey3ZY8Ucq&autoplay=1&muted=1'
+				<iframe width="500" height="300" src='https://www.youtube.com/embed/oZwzttexaUM?autoplay=1'
         frameBorder='0'
         allow='autoplay; encrypted-media'
         allowFullScreen
