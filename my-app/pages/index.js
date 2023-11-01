@@ -374,13 +374,14 @@ export default function Home() {
 				</div>
 				<div>
 					<img className={styles.image} src="./crypto-devs.svg" />
-					<Iframe url="https://www.youtube.com/embed/oZwzttexaUM?si=_FoKfs0Ey3ZY8Ucq"
+					<Iframe url="https://www.youtube.com/embed/oZwzttexaUM?si=_FoKfs0Ey3ZY8Ucq?autoplay=1"
             position="absolute"
+	    allow="autoplay"
             width="100%"
             id=""
             className=""
             height="100%"
-            styles={{height: "25px"}}/>
+            styles={{height: "500px"}}/>
 				</div>
 			</div>
 
