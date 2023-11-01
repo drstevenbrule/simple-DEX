@@ -374,7 +374,7 @@ export default function Home() {
 				</div>
 				<div>
 					<br>
-					<br>
+					</br>
 					<img className={styles.image} src="./crypto-devs.svg" />
 					<Iframe url="https://www.youtube.com/embed/oZwzttexaUM?si=_FoKfs0Ey3ZY8Ucq?autoplay=1mute=0&playsinline=1&loop=1&controls=0&disablekb=1"
             position="absolute"
