@@ -21,7 +21,7 @@ export const getTokensAfterRemove = async (
 	provider,
 	removeLPTokenWei,
 	_ethBalance,
-	cryptoDevTokenReserve
+	stinkyInkyTokenReserve
 ) => {
 	try {
 		const exchangeContract = new Contract(
@@ -31,7 +31,7 @@ export const getTokensAfterRemove = async (
 		);
 		const _totalSupply = await exchangeContract.totalSupply();
 		const _removeEther = _ethBalance.mul(removeLPTokenWei).div(_totalSupply);
-		const _removeCD = cryptoDevTokenReserve.mul(removeLPTokenWei).div(_totalSupply);
+		const _removeCD = stinkyInkyTokenReserve.mul(removeLPTokenWei).div(_totalSupply);
 		return (
 			_removeEther,
 			_removeCD
