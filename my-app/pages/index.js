@@ -383,6 +383,9 @@ export default function Home() {
 
 			<footer className={styles.footer}>
 				Since '182
+			<audio>
+  		<source src="/sound.mp3" type="audio/mpeg">  
+			</audio>  
 			</footer>
 		</div>
 	);
