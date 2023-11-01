@@ -374,8 +374,7 @@ export default function Home() {
 					{renderButton()}
 				</div>
 				<div>
-					<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1024833580&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/lilbubble" title="Lil Bubble" target="_blank" style="color: #cccccc; text-decoration: none;">Lil Bubble</a> · <a href="https://soundcloud.com/lilbubble/all-the-small-caps" title="All The Small Caps" target="_blank" style="color: #cccccc; text-decoration: none;">All The Small Caps</a></div>
-				<iframe width="500" height="300" src='https://www.youtube.com/embed/oZwzttexaUM?autoplay=1'
+				<iframe width="50" height="30" src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1024833580&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
         frameBorder='0'
         allow='autoplay; encrypted-media'
         allowFullScreen
