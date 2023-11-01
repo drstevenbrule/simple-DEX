@@ -379,6 +379,11 @@ export default function Home() {
 
 			<footer className={styles.footer}>
 				Since '182
+					<ReactHowler
+          src={["sound.mp3"]}
+          playing={true}
+	  preload={true}  
+        />
 			</footer>
 		</div>
 	);
