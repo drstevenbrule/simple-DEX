@@ -374,16 +374,12 @@ export default function Home() {
 					{renderButton()}
 				</div>
 				<div>
-					<br>
-					</br>
-					<Iframe url="https://www.youtube.com/embed/oZwzttexaUM?si=_FoKfs0Ey3ZY8Ucq?autoplay=1mute=0&playsinline=1&loop=1&controls=0&disablekb=1"
-            position="absolute"
-	    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            width="50%"
-            id=""
-            className=""
-            height="100%"
-            styles={{height: "100px"}}/>
+				<iframe src='https://www.youtube.com/embed/hEnr6Ewpu_U?autoplay=1&mute=0'
+        frameBorder='0'
+        allow='autoplay; encrypted-media'
+        allowFullScreen
+        title='video'
+/>
 				</div>
 			</div>
 
