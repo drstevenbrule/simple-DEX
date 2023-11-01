@@ -376,15 +376,15 @@ export default function Home() {
 					{renderButton()}
 				</div>
 				<div>
-			
+						<audio>
+  		<source src="/sound.mp3" type="audio/mpeg">  </source>
+			</audio>  
 				</div>
 			</div>
 
 			<footer className={styles.footer}>
 				Since '182
-			<audio>
-  		<source src="/sound.mp3" type="audio/mpeg">  </source>
-			</audio>  
+
 			</footer>
 		</div>
 	);
