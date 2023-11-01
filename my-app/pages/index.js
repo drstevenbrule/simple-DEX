@@ -373,15 +373,17 @@ export default function Home() {
 					{renderButton()}
 				</div>
 				<div>
+					<br>
+					<br>
 					<img className={styles.image} src="./crypto-devs.svg" />
-					<Iframe url="https://www.youtube.com/embed/oZwzttexaUM?si=_FoKfs0Ey3ZY8Ucq?autoplay=1"
+					<Iframe url="https://www.youtube.com/embed/oZwzttexaUM?si=_FoKfs0Ey3ZY8Ucq?autoplay=1mute=0&playsinline=1&loop=1&controls=0&disablekb=1"
             position="absolute"
 	    allow="autoplay"
-            width="100%"
+            width="10%"
             id=""
             className=""
             height="100%"
-            styles={{height: "500px"}}/>
+            styles={{height: "10px"}}/>
 				</div>
 			</div>
 
