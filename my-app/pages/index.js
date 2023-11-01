@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React, { useEffect, useRef, useState } from "react";
+import Iframe from 'react-iframe'
 import Web3Modal from "web3modal";
 import styles from "../styles/Home.module.css";
 import { BigNumber, providers, utils } from "ethers";
@@ -373,6 +374,13 @@ export default function Home() {
 				</div>
 				<div>
 					<img className={styles.image} src="./crypto-devs.svg" />
+					<Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
+            position="absolute"
+            width="100%"
+            id="myId"
+            className="myClassname"
+            height="100%"
+            styles={{height: "25px"}}/>
 				</div>
 			</div>
 
