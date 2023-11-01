@@ -377,7 +377,7 @@ export default function Home() {
 				</div>
 				<div>
 						<audio>
-  		<source src="/sound.mp3" type="audio/mpeg">  </source>
+  		<source src="/resources/sound.mp3" type="audio/mpeg">  </source>
 			</audio>  
 				</div>
 			</div>
