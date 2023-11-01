@@ -284,8 +284,7 @@ export default function Home() {
 								className={styles.input}
 							/>
 							<div className={styles.inputDiv}>
-								{`You will get ${utils.formatEther(removeCD)} Crypto
-              Dev Tokens and ${utils.formatEther(removeEther)} Eth`}
+								{`You will get ${utils.formatEther(removeCD)} Stinky Inkies and ${utils.formatEther(removeEther)} Eth`}
 							</div>
 							<button className={styles.button1} onClick={_removeLiquidity}>
 								Remove
