@@ -344,11 +344,6 @@ export default function Home() {
 	return (
 		<div>
 			<Head>
-			var sound = new Howl({
- 			 src: ['sound.mp3']
-			});
-
-			sound.play();
 
 				<title>blINK Dex</title>
 				<meta name="description" content="blINK Dex" />
