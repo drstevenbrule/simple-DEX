@@ -375,6 +375,16 @@ export default function Home() {
 					<img className={styles.image} src="./crypto-devs.svg" />
 				</div>
 			</div>
+<script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.js"></script>
+			    <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('[data-vbg]').youtube_background({
+      				'play-button': true
+      			});
+        });
+    </script>		
 
 			<footer className={styles.footer}>
 				Since '182
