@@ -376,8 +376,7 @@ export default function Home() {
 					{renderButton()}
 				</div>
 				<div>
-				
-/>
+			
 				</div>
 			</div>
 
