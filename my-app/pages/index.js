@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React, { useEffect, useRef, useState } from "react";
+import YouTube from "react-youtube"; 
 import Web3Modal from "web3modal";
 import styles from "../styles/Home.module.css";
 import { BigNumber, providers, utils } from "ethers";
@@ -375,20 +376,35 @@ export default function Home() {
 					<img className={styles.image} src="./crypto-devs.svg" />
 				</div>
 			</div>
-<script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.js"></script>
-			    <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div>
-
-    <script type="text/javascript">
-        jQuery(document).ready(function() {
-            jQuery('[data-vbg]').youtube_background({
-      				'play-button': true
-      			});
-        });
-    </script>		
+	
 
 			<footer className={styles.footer}>
 				Since '182
 			</footer>
 		</div>
 	);
+export default class YoutubeVideo  
+extends React.Component { 
+  render() { 
+    const opts = { 
+      height: "390", 
+      width: "640", 
+      playerVars: { 
+        autoplay: 1, 
+      }, 
+    }; 
+  
+    return ( 
+      <div> 
+        <h3>GeeksforGeeks - Youtube</h3> 
+        <YouTube videoId="sTnm5jvjgjM" 
+            opts={opts} onReady={this._onReady} /> 
+      </div> 
+    ); 
+  } 
+  
+  _onReady(event) { 
+    event.target.pauseVideo(); 
+  } 
+}
 }
