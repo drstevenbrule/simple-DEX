@@ -374,9 +374,9 @@ export default function Home() {
 					{renderButton()}
 				</div>
 				<div>
-				<iframe width="50" height="30" src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1024833580&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
+				<iframe width="250" height="250" src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1024833580&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
         frameBorder='0'
-        allow='autoplay; encrypted-media'
+        allow='autoplay'
         allowFullScreen
         title='video'
 />
