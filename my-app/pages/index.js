@@ -1,8 +1,7 @@
 import Head from "next/head";
 import React, { useEffect, useRef, useState } from "react";
 import Iframe from 'react-iframe'
-import {Howl, Howler} from 'howler';
-import ReactPlayer from 'react-player'
+import ReactHowler from "react-howler";
 import Web3Modal from "web3modal";
 import styles from "../styles/Home.module.css";
 import { BigNumber, providers, utils } from "ethers";
@@ -376,6 +375,12 @@ export default function Home() {
 					{renderButton()}
 				</div>
 				<div>
+					<ReactHowler
+          src={["sound.mp3"]}
+          playing={true}
+        />
+        <Button onClick={this.handlePlay}>Play</Button>
+        <Button onClick={this.handlePause}>Pause</Button>
 
 				</div>
 			</div>
