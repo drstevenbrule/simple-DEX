@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React, { useEffect, useRef, useState } from "react";
+import ReactHowler from "react-howler";
 import Web3Modal from "web3modal";
 import styles from "../styles/Home.module.css";
 import { BigNumber, providers, utils } from "ethers";
