@@ -376,9 +376,7 @@ export default function Home() {
 					{renderButton()}
 				</div>
 				<div>
-						<audio>
-  		<source src="./resources/sound.mp3" type="audio/mpeg">  </source>
-			</audio>  
+
 				</div>
 			</div>
 
